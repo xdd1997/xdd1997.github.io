@@ -62,7 +62,7 @@ def get_html_src_each_class(content,class_id):
     str00 += '</ul>\n'
     return str00
 
-excelPath = r"url_collectd_2.xls"
+excelPath = r"url_collectd_3.xls"
 content = pd.read_excel(excelPath,sheet_name=0,header=0)
 
 # 获取两列内容
@@ -86,7 +86,7 @@ html_path = r"..\index.html"
 with open(html_path,'r',encoding="utf-8") as fr:
     contentOfHtml = fr.read()
 
-# 替换文本
+# 替换文本·························
 import re
 
 pattern = re.compile(r'<!--搜索结束-->.*<!-- 版权信息 -->',re.DOTALL)
