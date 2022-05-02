@@ -69,12 +69,9 @@ for ii in URL_LIST:
         Folder_ii += 1
         count += 1
     else:
-        try:
-            sht1.write(count, 2, ii[0])
-        except:
-            sht1.write(count, 2, "")
+        sht1.write(count, 2, ii[1])
         sht1.write(count, 3, "#icon-shuqian")
-        sht1.write(count, 4, ii[1])
+        sht1.write(count, 4, ii[0])
         count += 1
 
 xls.save('url_collectd_2.xls')
