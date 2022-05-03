@@ -8,5 +8,4 @@
 
 3. page 重新部署
 
-[xdd1997.github.io](https://github.com/xdd1997/xdd1997.github.io)
-
+[https://xdd1997.github.io/](https://xdd1997.github.io/)
