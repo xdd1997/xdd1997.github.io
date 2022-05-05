@@ -62,7 +62,7 @@ def get_html_src_each_class(content,class_id):
     str00 += '</ul>\n'
     return str00
 
-excelPath = r"url_collectd_3.xls"
+excelPath = r"url_collectd_20220505.xls"
 content = pd.read_excel(excelPath,sheet_name=0,header=0)
 
 # 获取两列内容
