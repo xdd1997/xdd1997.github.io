@@ -1,3 +1,7 @@
+## 原理
+
+
+## 使用说明
 1. 从Chrome导出书签html
 2. 打开`01_get_info_from_Chrome_html.py`，修改书签html的文件名
 3. 运行`02_python_gitee.io_excel.py`
