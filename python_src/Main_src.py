@@ -101,7 +101,7 @@ def get_html_src_each_class(content, class_id):
     TITLE = content.iloc[index_id, 1]
     ICON = content.iloc[index_id, 3]
     str00 = '<ul class="mylist row">\n'
-    str00 += '<li class="title"><svg class="icon" aria-hidden="true"><use xlink:href="#{0}">             </use></svg> {1} </li>\n'.format(
+    str00 += '<li class="title"> <svg class="icon" aria-hidden="true"><use xlink:href="#{0}"></use></svg> {1} </li>\n'.format(
         ICON, TITLE)
 
     for ii in range(index_id + 1, index_id + 1 + N_url_each_class):
@@ -110,7 +110,7 @@ def get_html_src_each_class(content, class_id):
             title = ''
         icon = content.iloc[ii, 3]
         url = content.iloc[ii, 4]
-        str01 = '<li class="col-3 col-sm-3 col-md-3 col-lg-1">                 <a rel="nofollow" href="{0}" target="_blank"><svg class="icon" aria-hidden="true">                 <use xlink:href="#{1}"></use></svg><span>{2}</span></a></li>\n'.format(
+        str01 = '<li class="col-3 col-sm-3 col-md-3 col-lg-1"> <a rel="nofollow" href="{0}" target="_blank"><svg class="icon" aria-hidden="true">                 <use xlink:href="#{1}"></use></svg><span>{2}</span></a></li>\n'.format(
             url, icon, title)
         str00 += str01
 
@@ -134,6 +134,7 @@ def write_index_From_xlsx(xlsxName):
     # with open("ddx.html", "w", encoding="utf-8") as fw:
     #     fw.write(str_All)
 
+    # 读取已有的 index.html
     html_path = r"..\index.html"
     with open(html_path, 'r', encoding="utf-8") as fr:
         contentOfHtml = fr.read()
