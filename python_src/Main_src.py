@@ -166,7 +166,7 @@ def git_operation(repoPath):
 
 def main():
     bookmarksFile = r"bookmarks_2022_9_15.html"
-    xlsxName = r"url_collectd.xls"
+    xlsxName = r"url_collectd_manual.xls"
     repoPath = r"D:\Git\xdd1997.github.io"
     # URL_LIST = read_bookmarks(bookmarksFile)
     # save_content_to_xlsx(URL_LIST, xlsxName)
