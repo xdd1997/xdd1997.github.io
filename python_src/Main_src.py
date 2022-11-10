@@ -144,9 +144,10 @@ def write_index_From_xlsx(xlsxName):
     str_to_html = pattern.sub(str_All, contentOfHtml)
 
     icon_js = content.iloc[0, 4]
-    pattern = re.compile(r'//at.alicdn.com/t/font_2561558.*\.js')
+    # print(icon_js)
+    pattern = re.compile(r'//at.alicdn.com.*font_2561558.*\.js')
     str_to_html = pattern.sub(icon_js, str_to_html)
-
+    # print(str_to_html)
     # 写出到html
     html_path = r"..\index.html"
     with open(html_path, 'w', encoding="utf-8") as fw:
