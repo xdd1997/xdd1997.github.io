@@ -1,0 +1,7 @@
+file02 module
+=============
+
+.. automodule:: file02
+   :members:
+   :undoc-members:
+   :show-inheritance:
